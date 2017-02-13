@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Ellipsis</title>
+        <style>
+            h1, p {
+                width:300px;
+            }
+            
+            .ellipsis {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        </style>
+    </head>
+    <body>
+        <p>한 행을 넘어가는 글자를 자동으로 생략하는 기능</p>
+        <h1 class="ellipsis"> Lorem ipsum dolor sit amet, consectetur</h1>
+        <p class="ellipsis">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur</p>
+    </body>
+</html>

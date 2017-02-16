@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Traditional Event</title>
+        <script>
+            window.onload = function() {
+                var button = document.getElementById('button');
+                
+                button.onclick = function(){
+                    alert('click');
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <p>
+            문서 객체의 이벤트 속성에 함수를 지정하여 고전 이벤트 모델로 변경할 수 있다.
+            이때 지정한 함수를 이벤트 핸들러 또는 이벤트 리스너라고 부른다.
+        </p>
+        <button id="button">버튼</button>
+    </body>
+</html>

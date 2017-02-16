@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Basic</title>
+        <script>
+            window.onload = function() {
+                var image = document.getElementById('image');
+                
+                image.src = "http://placehold.it/300x200";
+                image.width = 300;
+                image.height = 200;
+            }
+        </script>
+    </head>
+    <body>
+        <img id = "image" />
+        
+        <p>
+            문서 객체의 속성을 조작할때는 아래 표의 메소드를 사용한다.
+        </p>
+        <table border="1">
+            <tr>
+                <td>메소드이름</td>
+                <td>설명</td>
+            </tr>
+            <tr>
+                <td> setAttribute(속성이름, 속성 값) </td>
+                <td>속성 지정 </td>
+            </tr>
+            <tr>
+                <td>getAttribute(속성이름)</td>
+                <td>속성 추출</td>
+            </tr>
+        </table>
+        
+        <p>웹 표준에서 지정한 속성은 다음과 같은 방법을 통해 곧바로 접근할 수도 있다.</p>
+        <p>image.src = "rint.png"</p>
+    </body>
+</html>

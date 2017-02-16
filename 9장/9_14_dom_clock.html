@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>colck</title>
+        <script>
+            window.onload = function() {
+                var clock = document.getElementById('clock');
+                
+                setInterval(function() {
+                    var now = new Date();
+                    clock.innerHTML = now.toString();
+                })
+            }
+        </script>
+    </head>
+    <body>
+    <h1 id="clock"></h1>
+        
+        <p>setInterval()함수를 사용해 1초마다 clock 문서 객체의 innerHTML 속성을 현재 시간으로 변경한다.
+        setInterval()  함수를 실행 </p>
+    </body>
+</html>

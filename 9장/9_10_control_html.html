@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Basic</title>
+        <script>
+            window.onload = function() {
+                
+                var output = "";
+                
+                for(var i = 0; i< 10; i++) {
+                    output += "<h1> header - " + i + "</h1>";
+                }
+                
+                document.body.innerHTML = output;
+            }
+        </script>
+    </head>
+    <body>    
+        <p>
+            innerHTML은 textContent 속성과 달리 html 태그가 적용된다. 
+        </p>
+        <p>
+            innerHTML과 textContent 속성 모두 태그 내부의 글자를 변경할 때 사용한다. HTML 태그 형태의 텍스트를 입력할 때는 innerHTML을 사용한다.
+        </p>
+    </body>
+</html>
